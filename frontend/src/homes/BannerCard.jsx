@@ -5,7 +5,6 @@ import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
 import './BannerCard.css';
 
-// ✅ Import images directly at the top
 import book1 from '../assets/banner-books/book1.png';
 import book2 from '../assets/banner-books/book2.png';
 import book3 from '../assets/banner-books/book3.png';
