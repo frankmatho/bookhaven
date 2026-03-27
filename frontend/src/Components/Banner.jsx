@@ -15,7 +15,7 @@ const Banner = () => {
         </div>
         </div>
         {/*right side*/}
-        <div className='mr-15'><BannerCard /></div>
+        <div className='mr-12'><BannerCard /></div>
       </div>
     </div>
   )
