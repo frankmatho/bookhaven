@@ -44,7 +44,7 @@ const UploadBook = () => {
     }
     console.log(bookObj)
     // send data to DB
-    fetch("http://localhost:3000/upload-book", {
+    fetch(`${import.meta.env.VITE_API_URL}/upload-book`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

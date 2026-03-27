@@ -13,7 +13,7 @@ const Shop = () => {
   const [expandedBookId, setExpandedBookId] = useState(null); // State to track expanded description
 
   useEffect(() => {
-    fetch("http://localhost:3000/all-books")
+    fetch(`${import.meta.env.VITE_API_URL}/all-books`)
       .then(res => res.json())
       .then(data => setBooks(data));
   }, []);

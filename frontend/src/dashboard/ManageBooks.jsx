@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/all-books").then(res => res.json()).then(data => setAllBooks(data))
+    fetch(`${import.meta.env.VITE_API_URL}/all-books`).then(res => res.json()).then(data => setAllBooks(data))
   },[])
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:3000/book/${id}`,{
+    fetch(`${import.meta.env.VITE_API_URL}/book/${id}`,{
       method: "DELETE",
 
     }).then(res => res.json()).then(data => {alert("Book is deleted successfully")}

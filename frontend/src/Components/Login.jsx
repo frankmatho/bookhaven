@@ -4,7 +4,7 @@ import { AuthContext } from '../contects/AuthProider'
 import googleLogo from "../assets/google-logo.svg"
 
 const Login = () => {
-  const {createUser,     loginwithGoogle,login} = useContext(AuthContext);
+  const {createUser, loginwithGoogle, login} = useContext(AuthContext);
   const [error, setError] = useState("");
 
   const location = useLocation();

@@ -48,7 +48,7 @@ const EditBooks = () => {
     }
     // console.log(bookObj)
     // send data to DB
-    fetch(`http://localhost:3000/book/${id}`,{
+    fetch(`${import.meta.env.VITE_API_URL}/book/${id}`,{
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
